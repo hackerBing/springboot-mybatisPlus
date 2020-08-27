@@ -28,9 +28,7 @@ public class UserController {
     public JsonData register(@RequestBody Map<String,String> userInfo ){
 
         int rows = userService.save(userInfo);
-
         return rows == 1 ? JsonData.buildSuccess(): JsonData.buildError("注册失败，请重试");
-
     }
 
 

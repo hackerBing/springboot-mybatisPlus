@@ -92,8 +92,6 @@ public class LoginInterceptor implements HandlerInterceptor {
         }catch (Exception e){
             e.printStackTrace();
         }
-
-
     }
 
 
